@@ -181,8 +181,8 @@ Return only JSON, no markdown or commentary.
 
 
         json_plan = self.client.generate(planning_prompt)
-        print(json_plan)
-        return
+        # print(json_plan)
+        # return
         
         #sometime model return empty content and files so we need refiner
         response=self.refiner.refine_plan(user_query, json_plan)
